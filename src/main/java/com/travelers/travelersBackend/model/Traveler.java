@@ -1,4 +1,4 @@
-package com.travelers.travelers_backend.model;
+package com.travelers.travelersBackend.model;
 
 
 public class Traveler {

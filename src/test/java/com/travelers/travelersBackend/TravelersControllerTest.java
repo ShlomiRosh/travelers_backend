@@ -1,10 +1,10 @@
-package com.travelers.travelers_backend;
+package com.travelers.travelersBackend;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.travelers.travelers_backend.controller.TravelersController;
-import com.travelers.travelers_backend.model.Traveler;
-import com.travelers.travelers_backend.service.Redis;
+import com.travelers.travelersBackend.controller.TravelersController;
+import com.travelers.travelersBackend.model.Traveler;
+import com.travelers.travelersBackend.service.Redis;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,7 +59,7 @@ public class TravelersControllerTest {
                 .content(this.mapper.writeValueAsString(RECORD_1));
 
         mockMvc.perform(mockRequest)
-                .andExpect(status().isBadRequest());
+                .andExpect(status().is(403));
     }
 
     @Test
@@ -79,7 +79,7 @@ public class TravelersControllerTest {
         mockMvc.perform(MockMvcRequestBuilders
                         .get("/travelers/12345")
                         .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isBadRequest());
+                .andExpect(status().is(403));
     }
 
 }

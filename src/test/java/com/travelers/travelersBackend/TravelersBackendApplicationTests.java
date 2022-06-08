@@ -1,4 +1,4 @@
-package com.travelers.travelers_backend;
+package com.travelers.travelersBackend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
