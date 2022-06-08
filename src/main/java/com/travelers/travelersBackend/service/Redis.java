@@ -1,4 +1,4 @@
-package com.travelers.travelers_backend.service;
+package com.travelers.travelersBackend.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;

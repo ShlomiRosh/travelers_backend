@@ -1,4 +1,4 @@
-package com.travelers.travelers_backend.config;
+package com.travelers.travelersBackend.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

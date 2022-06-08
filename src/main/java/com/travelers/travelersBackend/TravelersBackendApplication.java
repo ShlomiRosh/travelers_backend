@@ -1,4 +1,4 @@
-package com.travelers.travelers_backend;
+package com.travelers.travelersBackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
